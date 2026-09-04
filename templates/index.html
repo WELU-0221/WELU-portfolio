@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WELU 的個人網站，分享關於我、作品與聯絡方式。">
+    <title>WELU｜Personal Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="主要導覽">
+            <a class="logo" href="#home" aria-label="WELU 首頁">WELU<span>.</span></a>
+            <div class="menu">
+                <a href="#home">首頁</a>
+                <a href="#about">關於我</a>
+                <a href="#projects">作品</a>
+                <a href="#contact">聯絡</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+            <div class="hero-content">
+                <p class="eyebrow"><span></span> Hello, welcome to my space</p>
+                <h1>把想法，打造為<br><span>簡潔而有溫度的體驗。</span></h1>
+                <p class="hero-copy">嗨，我是 WELU。我喜歡用 Python、Flask 與網頁技術，將創意一步步變成實用、好看的數位作品。</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">瀏覽作品 <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="#about">認識我</a>
+                </div>
+            </div>
+            <div class="hero-card" aria-label="個人簡介卡片">
+                <div class="card-topline"><span class="status-dot"></span><span>OPEN TO NEW IDEAS</span></div>
+                <div class="monogram" aria-hidden="true">W</div>
+                <div class="card-footer">
+                    <div><strong>WELU</strong><span>Developer &amp; Creator</span></div>
+                    <span class="card-number">01</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="section-heading">
+                <p class="section-label">01 / ABOUT</p>
+                <h2>關於我</h2>
+            </div>
+            <div class="about-content">
+                <p class="about-lead">我相信好的作品，不只要能運作，也要讓人願意使用。</p>
+                <div class="about-details">
+                    <p>我正在透過 Python 與 Flask 累積網頁開發經驗，享受從釐清問題、設計介面，到完成可用產品的每一個過程。</p>
+                    <div class="skill-list" aria-label="使用技術">
+                        <span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="section-label">02 / PROJECTS</p>
+                <h2>精選作品</h2>
+                <p>持續學習，也持續把新點子做成看得見的成果。</p>
+            </div>
+            <div class="project-grid">
+                <article class="project-card featured">
+                    <div class="project-visual visual-one" aria-hidden="true"><span>FLASK</span></div>
+                    <div class="project-info">
+                        <span class="project-index">01</span>
+                        <div><h3>個人作品網站</h3><p>以 Flask 建立的響應式個人網站，讓作品與個人介紹更清楚地被看見。</p></div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-visual visual-two" aria-hidden="true"><span>LAB</span></div>
+                    <div class="project-info">
+                        <span class="project-index">02</span>
+                        <div><h3>下一個創意實驗</h3><p>新的作品正在發想與製作中，敬請期待。</p></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <p class="section-label">03 / CONTACT</p>
+            <div class="contact-inner">
+                <div><h2>有個好點子？<br><span>一起聊聊吧。</span></h2><p>不論是合作、交流，或只是想打聲招呼，都歡迎來信。</p></div>
+                <a class="contact-link" href="mailto:hello@example.com"><span>寫信給我</span><span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="logo footer-logo" href="#home">WELU<span>.</span></a>
+        <p>Designed &amp; built with care.</p>
+        <a href="#home">回到頂端 ↑</a>
+    </footer>
+</body>
+</html>
