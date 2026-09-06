@@ -1,101 +1,91 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WELU 的個人網站，分享關於我、作品與聯絡方式。">
-    <title>WELU｜Personal Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="呂威緯｜Engineering Project & Automation Engineer，專注工程專案、機械設計與自動化開發。">
+  <title>呂威緯｜Engineering Project & Automation Engineer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <header class="site-header">
-        <nav class="navbar" aria-label="主要導覽">
-            <a class="logo" href="#home" aria-label="WELU 首頁">WELU<span>.</span></a>
-            <div class="menu">
-                <a href="#home">首頁</a>
-                <a href="#about">關於我</a>
-                <a href="#projects">作品</a>
-                <a href="#contact">聯絡</a>
-            </div>
-        </nav>
-    </header>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="主要導覽">
+      <a class="brand" href="#home" aria-label="呂威緯首頁">WELU<span>//</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span class="sr-only">開啟導覽</span></button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#projects">Projects</a><a href="#process">Process</a><a href="#experience">Experience</a><a class="nav-cta" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-            <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
-            <div class="hero-content">
-                <p class="eyebrow"><span></span> Hello, welcome to my space</p>
-                <h1>把想法，打造為<br><span>簡潔而有溫度的體驗。</span></h1>
-                <p class="hero-copy">嗨，我是 WELU。我喜歡用 Python、Flask 與網頁技術，將創意一步步變成實用、好看的數位作品。</p>
-                <div class="hero-actions">
-                    <a class="button button-primary" href="#projects">瀏覽作品 <span aria-hidden="true">↗</span></a>
-                    <a class="button button-secondary" href="#about">認識我</a>
-                </div>
-            </div>
-            <div class="hero-card" aria-label="個人簡介卡片">
-                <div class="card-topline"><span class="status-dot"></span><span>OPEN TO NEW IDEAS</span></div>
-                <div class="monogram" aria-hidden="true">W</div>
-                <div class="card-footer">
-                    <div><strong>WELU</strong><span>Developer &amp; Creator</span></div>
-                    <span class="card-number">01</span>
-                </div>
-            </div>
-        </section>
+  <main id="main">
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Engineering × Project × Automation</p>
+        <p class="hero-name">呂威緯</p>
+        <p class="hero-role">Engineering Project &amp; Automation Engineer</p>
+        <h1>把工程需求，轉化成<br><em>可管理、可自動化、<br>可落地</em>的設計流程。</h1>
+        <p class="hero-en">Turning engineering requirements into structured, automated, and executable workflows.</p>
+        <p class="hero-intro">具備機械製圖與 CAD 背景，並參與工程專案管理、設計自動化工具與開發流程整合。從需求整理、跨部門協作、責任分工與時程追蹤，到 C#、SolidWorks API、Excel、SQL 自動化工具開發，我專注於將複雜工程流程拆解、標準化並落地。</p>
+        <div class="actions"><a class="button primary" href="#projects">View Projects ↓</a><a class="button placeholder" href="#" aria-disabled="true" title="待補 Resume 連結">Resume <small>待補連結</small></a><a class="button placeholder" href="#" aria-disabled="true" title="待補 GitHub 連結">GitHub <small>待補連結</small></a><a class="button placeholder" href="#contact" title="Email 尚待補上">Email Me</a></div>
+      </div>
+      <aside class="hero-system" aria-label="能力整合示意">
+        <div class="system-head"><span>WORKFLOW.SYSTEM</span><span class="online">● ACTIVE</span></div>
+        <div class="system-core"><span>REQUIREMENTS</span><strong>ENGINEERING<br>WORKFLOW</strong><small>STRUCTURE / AUTOMATE / VALIDATE</small></div>
+        <div class="system-nodes"><span>01 ENGINEERING</span><span>02 COORDINATION</span><span>03 AUTOMATION</span></div>
+      </aside>
+    </section>
 
-        <section class="section about" id="about">
-            <div class="section-heading">
-                <p class="section-label">01 / ABOUT</p>
-                <h2>關於我</h2>
-            </div>
-            <div class="about-content">
-                <p class="about-lead">我相信好的作品，不只要能運作，也要讓人願意使用。</p>
-                <div class="about-details">
-                    <p>我正在透過 Python 與 Flask 累積網頁開發經驗，享受從釐清問題、設計介面，到完成可用產品的每一個過程。</p>
-                    <div class="skill-list" aria-label="使用技術">
-                        <span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="thesis"><div class="container"><p>工程專案 × 機械設計 × 自動化開發</p><span>整合需求、規則、軟體與驗證，建立完整且可持續改善的工程開發流程。</span></div></section>
 
-        <section class="section" id="projects">
-            <div class="section-heading">
-                <p class="section-label">02 / PROJECTS</p>
-                <h2>精選作品</h2>
-                <p>持續學習，也持續把新點子做成看得見的成果。</p>
-            </div>
-            <div class="project-grid">
-                <article class="project-card featured">
-                    <div class="project-visual visual-one" aria-hidden="true"><span>FLASK</span></div>
-                    <div class="project-info">
-                        <span class="project-index">01</span>
-                        <div><h3>個人作品網站</h3><p>以 Flask 建立的響應式個人網站，讓作品與個人介紹更清楚地被看見。</p></div>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-visual visual-two" aria-hidden="true"><span>LAB</span></div>
-                    <div class="project-info">
-                        <span class="project-index">02</span>
-                        <div><h3>下一個創意實驗</h3><p>新的作品正在發想與製作中，敬請期待。</p></div>
-                    </div>
-                </article>
-            </div>
-        </section>
+    <section class="section container" id="about">
+      <header class="hgroup"><p>01 / ABOUT ME</p><h2>從設計一個模型，<br>到設計一套流程。</h2></header>
+      <div class="about-grid"><div class="lead"><p>我從機械製圖開始接觸工程設計，從 CAD 建模、工程圖，到後來參與工程需求整理、開發管理與自動化工具開發。</p><blockquote>「很多重複性的設計工作，其實可以透過標準化、公式化與程式自動化降低人工操作。」</blockquote></div><div class="body-copy"><p>因此我開始將 C#、SolidWorks API、Excel、SQL 導入機械設計流程，參與工程需求整理、設計規則拆解、參數化模型、CAD 自動化、開發進度追蹤、RACI 責任分工、Gantt 時程管理與驗證流程規劃。</p><p>我的目標不是只完成單一模型，而是建立<strong>可重複、可維護、可擴充</strong>的工程流程。</p><h3>Future Direction</h3><div class="pills"><span>Engineering Project Management</span><span>Engineering Automation</span><span>Mechanical Design Automation</span><span>Smart Manufacturing</span><span>CAD / Design Automation</span><span>Technical Project Coordination</span></div></div></div>
+    </section>
 
-        <section class="section contact" id="contact">
-            <p class="section-label">03 / CONTACT</p>
-            <div class="contact-inner">
-                <div><h2>有個好點子？<br><span>一起聊聊吧。</span></h2><p>不論是合作、交流，或只是想打聲招呼，都歡迎來信。</p></div>
-                <a class="contact-link" href="mailto:hello@example.com"><span>寫信給我</span><span aria-hidden="true">↗</span></a>
-            </div>
-        </section>
-    </main>
+    <section class="section section-tint" id="capabilities"><div class="container">
+      <header class="hgroup"><p>02 / CORE CAPABILITIES</p><h2>三種能力，一套完整視角。</h2><span>在工程、協調與開發之間建立共同語言。</span></header>
+      <div class="cap-grid">
+        <article class="cap-card"><b>01</b><h3>Project &amp;<br>Process Management</h3><ul><li>Requirement Clarification</li><li>Project Coordination</li><li>RACI / Gantt Planning</li><li>Progress &amp; Task Tracking</li><li>Validation Planning</li><li>Cross-functional Communication</li><li>Engineering Documentation</li></ul></article>
+        <article class="cap-card"><b>02</b><h3>Engineering<br>Design</h3><ul><li>SolidWorks / CAD</li><li>3D Modeling</li><li>Engineering Drawing</li><li>Parametric Design</li><li>Design Rule Analysis</li><li>Mechanical Drawing</li></ul></article>
+        <article class="cap-card"><b>03</b><h3>Automation<br>Development</h3><ul><li>C# / WinForms</li><li>SolidWorks API / COM</li><li>Excel Automation</li><li>SQL / Oracle SQL</li><li>Formula Mapping</li><li>Engineering Workflow Automation</li></ul></article>
+      </div>
+    </div></section>
 
-    <footer>
-        <a class="logo footer-logo" href="#home">WELU<span>.</span></a>
-        <p>Designed &amp; built with care.</p>
-        <a href="#home">回到頂端 ↑</a>
-    </footer>
+    <section class="section container" id="projects">
+      <header class="hgroup split"><div><p>03 / FEATURED PROJECTS</p><h2>Engineering systems,<br>built end to end.</h2></div><span>專案內容聚焦架構、流程、技術方法與工程價值，不包含客戶、機密尺寸或內部圖面。</span></header>
+      <div class="project-grid">
+        <article class="project-card accent-card"><div class="project-head"><span>PROJECT 01</span><span>FEATURED</span></div><h3>Burn-in Socket<br>Automation System</h3><p>將 Burn-in Socket 設計流程自動化，從案件資料、工程公式計算，一路整合至 SolidWorks 3D 模型生成。</p><div class="tags"><span>C#</span><span>SolidWorks API</span><span>Excel</span><span>SQL</span><span>COM</span></div><div class="flow" aria-label="案件需求到驗證流程"><span>Case Requirement</span><i>↓</i><span>Engineering Rules</span><i>↓</i><span>Formula Mapping</span><i>↓</i><span>C# Automation</span><i>↓</i><span>SolidWorks API</span><i>↓</i><span>3D Model</span><i>↓</i><span>Validation</span></div><h4>Project / Engineering Responsibilities</h4><ul class="check-list"><li>整理案件需求與設計參數</li><li>建立 Formula Mapping、拆解設計規則</li><li>串接 Excel / SQL / SolidWorks</li><li>建立 GP / MP / RT / TH / BS 模型邏輯</li><li>自動控制模型尺寸與 Feature</li><li>規劃驗證項目與開發工作</li></ul><footer>從「工程需求」一路到「自動化模型輸出」。</footer></article>
+        <article class="project-card"><div class="project-head"><span>PROJECT 02</span><span>CAD AUTOMATION</span></div><h3>Parametric SolidWorks<br>Model Automation</h3><p>建立 GP / MP / RT / TH / BS 等參數化模型公版，依案件與設計條件自動控制尺寸、特徵與模型重建。</p><div class="tags"><span>C#</span><span>SolidWorks API</span><span>Excel</span><span>Parametric Design</span></div><h4>Key Contributions</h4><ul class="check-list"><li>Parameter Definition</li><li>Dimension Mapping</li><li>Feature Control &amp; Model Rebuild</li><li>Standardized Model Structure</li><li>Validation Rule Definition</li></ul><footer>將工程規則轉成程式，由程式控制 SolidWorks。</footer></article>
+        <article class="project-card"><div class="project-head"><span>PROJECT 03</span><span>DATA-DRIVEN CAD</span></div><h3>Burn-in Device<br>Automation System</h3><p>針對 4000 FTR / 5000 GTR Device，建立資料 Mapping、尺寸調整、Feature Folder 控制與自動模型處理流程。</p><div class="tags"><span>C#</span><span>SolidWorks API</span><span>SQL</span><span>Engineering Data</span></div><div class="mini-flow"><span>Engineering Data</span><i>→</i><span>Design Logic</span><i>→</i><span>CAD Model</span></div><h4>Key Contributions</h4><ul class="check-list"><li>Requirement / Engineering Data Mapping</li><li>Size Mapping &amp; Feature Folder Control</li><li>Automated Model Adjustment</li><li>Validation Coordination</li></ul></article>
+        <article class="project-card accent-card"><div class="project-head"><span>PROJECT 04</span><span>INTEGRATED PLATFORM</span></div><h3>3D Automated<br>Design Platform</h3><p>建立整合式工程設計平台，將工程師操作、Excel 設計計算與 SolidWorks 模型輸出整合成單一工作流程。</p><div class="tags"><span>C# WinForms</span><span>Excel COM</span><span>SolidWorks COM</span></div><div class="flow compact" aria-label="自動化設計平台流程"><span>Engineer</span><i>↓</i><span>Requirement Input</span><i>↓</i><span>C# WinForms UI</span><i>↓</i><span>Excel Rule Engine</span><i>↓</i><span>SolidWorks API / COM</span><i>↓</i><span>3D Model</span><i>↓</i><span>Validation / Output</span></div><h4>Project Responsibilities</h4><ul class="check-list"><li>UI 流程規劃與工程需求整理</li><li>Design Rule Mapping / Excel Formula Integration</li><li>SolidWorks COM Automation</li><li>開發項目拆解與驗證流程規劃</li><li>End-to-end Workflow Integration</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="process"><div class="container process-grid"><header class="hgroup"><p>04 / PROJECT &amp; PROCESS</p><h2>讓開發工作<br>可追蹤、可驗證。</h2><span>具備 Engineering Project Coordination / Process Management 能力，協助工程項目從模糊需求走向清楚交付。</span></header><div><div class="process-flow"><span>Requirement</span><i>↓</i><span>Task Breakdown</span><i>↓</i><span>RACI</span><i>↓</i><span>Development</span><i>↓</i><span>Verification</span><i>↓</i><span>Release / Improvement</span></div><div class="process-list"><span>Requirement Breakdown</span><span>RACI Matrix</span><span>Gantt Planning</span><span>Task Ownership</span><span>Design / Formula / Software / Validation Tracking</span><span>Progress Review</span><span>Cross-functional Coordination</span><span>Engineering Change Tracking</span></div></div></div></section>
+
+    <section class="section container" id="tools"><header class="hgroup"><p>05 / ENGINEERING TOOLS I'VE BUILT</p><h2>Supporting tools &amp; modules.</h2><span>將重複工程任務轉化為可使用的工具與模組。</span></header><div class="tools-grid">
+      <article><b>01</b><h3>BS Automation Module</h3><p>BS 模型流程、Pin Map、Properties、公式與模型輸出</p><span>C# / SolidWorks API / DXF / Excel</span></article><article><b>02</b><h3>Socket Design Rule / Formula Engine</h3><p>將 Socket Size、MP / GP / RT 尺寸與孔版條件公式化</p><span>Excel / Formula Mapping / C#</span></article><article><b>03</b><h3>SolidWorks Hole Wizard Automation</h3><p>自動建立指定孔規格</p><span>C# / SolidWorks API</span></article><article><b>04</b><h3>Feature Color Automation</h3><p>依孔、特徵、PARTNAME、Bounding Box 等條件自動分類與上色</p><span>C# / SolidWorks API</span></article><article><b>05</b><h3>Drawing Tolerance Automation</h3><p>自動處理 SLDDRW、孔徑、孔深、凹槽公差、模型重建與輸出</p><span>C# / SolidWorks API</span></article><article><b>06</b><h3>ScrewQueryForm</h3><p>查詢螺絲料號、種類、螺紋、牙數、尺寸、公差與等級</p><span>C# WinForms / Oracle SQL</span></article><article><b>07</b><h3>Socket Automation UI Toolkit</h3><p>Hole Wizard、規格選擇、顏色工具、自動上色與清色</p><span>C# WinForms</span></article><article><b>08</b><h3>Design Automation RACI / Gantt System</h3><p>將模型、公式、軟體、驗證等工作拆分責任、時程與進度</p><span>Excel / RACI / Gantt</span></article>
+    </div></section>
+
+    <section class="section section-tint" id="stack"><div class="container"><header class="hgroup"><p>06 / TECH STACK</p><h2>Methods, tools &amp; technology.</h2></header><div class="stack-grid"><article><h3>Project &amp; Management</h3><div class="pills"><span>Requirement Analysis</span><span>RACI</span><span>Gantt</span><span>Progress Tracking</span><span>Validation Planning</span><span>Project Coordination</span></div></article><article><h3>Mechanical Design</h3><div class="pills"><span>SolidWorks</span><span>CAD</span><span>3D Modeling</span><span>Engineering Drawing</span><span>Parametric Design</span></div></article><article><h3>Automation Development</h3><div class="pills"><span>C#</span><span>WinForms</span><span>SolidWorks API</span><span>COM Automation</span><span>Excel Automation</span></div></article><article><h3>Data &amp; Web Tools</h3><div class="pills"><span>Excel</span><span>SQL</span><span>Oracle SQL</span><span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span><span>Git</span><span>GitHub</span><span>Render</span><span>VS Code</span></div></article></div></div></section>
+
+    <section class="section container" id="experience"><header class="hgroup"><p>07 / EXPERIENCE &amp; EDUCATION</p><h2>Engineering foundation.</h2></header><div class="timeline"><article><div><time>2023 — 2027</time><span>EDUCATION</span></div><div><h3>國立高雄科技大學</h3><p>機電工程相關科系</p></div></article><article><div><time>2020 — 2023</time><span>EDUCATION</span></div><div><h3>嘉義高工</h3><p>電腦機械製圖科</p></div></article><article><div><time>EXPERIENCE</time><span>ENGINEERING PRACTICE</span></div><div><h3>機械製圖 / CAD 實務經驗</h3><p>參與焊接零件 3D 建模、結構細節調整與工程規範確認，建立機械設計與製造端的基本實務理解。</p></div></article></div></section>
+
+    <section class="section early container"><div class="early-card"><p>08 / EARLY ENGINEERING PROJECT</p><div><h2>Automated Shuttlecock Collector</h2><span>從問題定義開始的工程實作。</span></div><div><p>高中期間參與機械設計競賽，與團隊完成自動拾羽球車設計，累積問題定義、CAD 設計、團隊協作與工程實作經驗。</p><div class="tags"><span>Mechanical Design</span><span>CAD</span><span>Team Project</span></div></div></div></section>
+
+    <section class="section container" id="certifications"><header class="hgroup"><p>09 / CERTIFICATIONS</p><h2>Professional credentials.</h2></header><div class="cert-grid"><span>電腦輔助機械設計製圖乙級</span><span>電腦輔助機械設計製圖丙級</span><span>3D 立體製圖丙級</span><span>熱處理丙級</span><span>Pro/E 國際證照</span><span>Word 證照</span><span>PowerPoint 證照</span></div></section>
+
+    <section class="contact section-tint" id="contact"><div class="container contact-inner"><div><p>10 / CONTACT</p><h2>Let's improve<br><em>engineering workflows.</em></h2><span>如果你對工程專案管理、機械設計自動化、CAD API 或工程工具開發有興趣，歡迎與我聯絡。</span></div><div class="contact-actions"><a href="#" aria-disabled="true">Email <small>待補連結</small></a><a href="#" aria-disabled="true">GitHub <small>待補連結</small></a><a href="#" aria-disabled="true">Resume <small>待補連結</small></a></div></div></section>
+  </main>
+
+  <footer class="footer container"><div><strong>Engineering Project × Mechanical Design × Automation</strong><span>Built with Python, Flask, HTML &amp; CSS. Deployed on Render.</span></div><a href="#home">Back to top ↑</a></footer>
+  <script>
+    const toggle=document.querySelector('.nav-toggle'),menu=document.querySelector('.nav-menu');
+    toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));menu.classList.toggle('open');});
+    menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{toggle.setAttribute('aria-expanded','false');menu.classList.remove('open');}));
+    document.querySelectorAll('a[aria-disabled="true"]').forEach(link=>link.addEventListener('click',event=>event.preventDefault()));
+  </script>
 </body>
 </html>
