@@ -63,16 +63,15 @@
               <p class="robot-scope-label">個人負責：機構配置設計與音樂分析研究</p>
               <ul class="check-list">
                 <li>使用 SolidWorks 建立機器人 3D 機構與組裝設計</li>
-                <li>規劃控制板、感測器、馬達、電源及其他硬體位置</li>
-                <li>考量機構空間、裝配、硬體干涉與整體配置</li>
-                <li>研究音訊轉換為 Spectrogram 頻譜圖</li>
-                <li>研究以頻譜特徵作為 AI 輸入</li>
+                <li>規劃控制板、感測器、馬達與電源配置，考量空間、裝配及硬體干涉</li>
+                <li>研究音訊轉換為 Spectrogram，以及頻譜特徵作為 AI 輸入的方法</li>
                 <li>探討 Beat / Tempo / Rhythm 音樂節奏辨識</li>
                 <li>研究節奏辨識結果與機器人動作的整合方式</li>
               </ul>
             </section>
             <section class="robot-team" aria-labelledby="robot-architecture">
               <h4 id="robot-architecture">Project System / Team Architecture</h4>
+              <span class="robot-team-badge">Team-level Components</span>
               <p class="robot-scope-label">整體團隊系統的技術與元件</p>
               <ul class="robot-components" aria-label="Project Technologies / Components">
                 <li>ROS</li><li>RViz</li><li>Gazebo</li><li>Raspberry Pi</li><li>IMU</li><li>FSR-402 Pressure Sensor</li><li>COP / Center of Pressure</li><li>AI / Reinforcement Learning</li><li>SolidWorks</li>
@@ -83,16 +82,16 @@
           <figure class="robot-workflows" aria-labelledby="robot-workflow-caption">
             <figcaption id="robot-workflow-caption">System Integration Workflow <span>團隊系統整合路徑示意</span></figcaption>
             <div class="robot-paths">
-              <div class="robot-path"><h4>AI / Music</h4><ol role="list"><li>Music Input</li><li>Audio Feature Extraction</li><li>Spectrogram</li><li>AI Rhythm Recognition</li><li>Beat / Tempo / Rhythm</li><li>Motion Planning</li><li>Robot Motion</li></ol></div>
-              <div class="robot-path"><h4>Mechanical</h4><ol role="list"><li>Design Requirement</li><li>3D Mechanism Design</li><li>Hardware Placement</li><li>Interference / Assembly Check</li><li>Robot Structure</li></ol></div>
+              <div class="robot-path"><h4>AI / Music</h4><ol role="list" aria-label="AI 與音樂流程"><li>Music</li><li>Spectrogram</li><li>AI Rhythm Recognition</li><li>Motion Planning</li></ol></div>
+              <div class="robot-path"><h4>Mechanical</h4><ol role="list" aria-label="機構設計流程"><li>Requirement</li><li>3D Design</li><li>Hardware Placement</li><li>Assembly Check</li></ol></div>
             </div>
-            <div class="robot-merge"><span>AI / Control</span><span>Mechanical Design</span></div>
+            <div class="robot-merge" aria-hidden="true"></div>
             <div class="robot-system"><strong>Robot System</strong><span>機構 × AI / Control 整合 · 姿態與平衡驗證</span></div>
           </figure>
         </article>
-        <article class="project-card accent-card"><div class="project-head"><span>PROJECT 01</span><span>FEATURED</span></div><h3>Burn-in Socket Automation System</h3><p>串接工程公式與資料，將 Socket 設計需求轉為 SolidWorks 模型。</p><div class="tags"><span>C#</span><span>SolidWorks API / COM</span><span>Excel</span><span>SQL</span></div><h4>Key Contributions</h4><ul class="check-list"><li>需求整理與設計規則拆解</li><li>Formula Mapping 與資料串接</li><li>模型參數與 Feature 自動控制</li><li>開發工作與驗證項目規劃</li></ul><ol class="project-workflow" aria-label="Socket 自動化流程"><li>Requirement</li><li>Rules / Data</li><li>CAD Automation</li><li>Validation</li></ol></article>
+        <article class="project-card accent-card"><div class="project-head"><span>PROJECT 01</span><span>FEATURED</span></div><h3>Socket Automation System</h3><p>串接工程公式與資料，將 Socket 設計需求轉為 SolidWorks 模型。</p><div class="tags"><span>C#</span><span>SolidWorks API / COM</span><span>Excel</span><span>SQL</span></div><h4>Key Contributions</h4><ul class="check-list"><li>需求整理與設計規則拆解</li><li>Formula Mapping 與資料串接</li><li>模型參數與 Feature 自動控制</li><li>開發工作與驗證項目規劃</li></ul><ol class="project-workflow" aria-label="Socket 自動化流程"><li>Requirement</li><li>Rules / Data</li><li>CAD Automation</li><li>Validation</li></ol></article>
         <article class="project-card"><div class="project-head"><span>PROJECT 02</span><span>CAD AUTOMATION</span></div><h3>Parametric SolidWorks Model Automation</h3><p>建立參數化模型公版，依設計條件控制尺寸、特徵與模型重建。</p><div class="tags"><span>C#</span><span>SolidWorks API</span><span>Excel</span></div><h4>Key Contributions</h4><ul class="check-list"><li>Parameter Definition / Dimension Mapping</li><li>Feature Control &amp; Model Rebuild</li><li>Standardized Model Structure</li><li>Validation Rule Definition</li></ul><ol class="project-workflow" aria-label="參數化模型流程"><li>Parameters</li><li>Mapping</li><li>Model Rebuild</li><li>Validation</li></ol></article>
-        <article class="project-card"><div class="project-head"><span>PROJECT 03</span><span>DATA-DRIVEN CAD</span></div><h3>Burn-in Device Automation System</h3><p>將工程資料對應至模型尺寸與特徵，建立 Device 自動化處理流程。</p><div class="tags"><span>C#</span><span>SolidWorks API</span><span>SQL</span></div><h4>Key Contributions</h4><ul class="check-list"><li>Requirement / Engineering Data Mapping</li><li>Size Mapping &amp; Feature Folder Control</li><li>Automated Model Adjustment</li><li>Validation Coordination</li></ul><ol class="project-workflow" aria-label="Device 自動化流程"><li>Engineering Data</li><li>Design Logic</li><li>CAD Model</li><li>Validation</li></ol></article>
+        <article class="project-card"><div class="project-head"><span>PROJECT 03</span><span>DATA-DRIVEN CAD</span></div><h3>Device Automation System</h3><p>將工程資料對應至模型尺寸與特徵，建立 Device 自動化處理流程。</p><div class="tags"><span>C#</span><span>SolidWorks API</span><span>SQL</span></div><h4>Key Contributions</h4><ul class="check-list"><li>Requirement / Engineering Data Mapping</li><li>Size Mapping &amp; Feature Folder Control</li><li>Automated Model Adjustment</li><li>Validation Coordination</li></ul><ol class="project-workflow" aria-label="Device 自動化流程"><li>Engineering Data</li><li>Design Logic</li><li>CAD Model</li><li>Validation</li></ol></article>
         <article class="project-card accent-card"><div class="project-head"><span>PROJECT 04</span><span>INTEGRATED PLATFORM</span></div><h3>3D Automated Design Platform</h3><p>整合操作介面、Excel 設計計算與 SolidWorks 輸出，建立單一設計流程。</p><div class="tags"><span>C# WinForms</span><span>Excel COM</span><span>SolidWorks COM</span></div><h4>Key Contributions</h4><ul class="check-list"><li>UI 流程規劃與需求整理</li><li>Design Rule / Excel Formula Integration</li><li>SolidWorks COM Automation</li><li>開發拆解、流程整合與驗證規劃</li></ul><ol class="project-workflow" aria-label="整合設計平台流程"><li>WinForms UI</li><li>Excel Rules</li><li>SolidWorks</li><li>Validated Output</li></ol></article>
       </div>
     </section>
