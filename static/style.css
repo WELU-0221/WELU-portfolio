@@ -11,6 +11,36 @@
 @media(max-width:680px){.container{width:min(calc(100% - 32px),var(--max))}.nav-toggle{width:40px;height:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer}.nav-toggle span:not(.sr-only){width:20px;height:1px;background:var(--text)}.nav-menu{display:none;position:absolute;top:72px;right:0;left:0;padding:18px 16px 24px;flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid var(--line);background:#090e16}.nav-menu.open{display:flex}.nav-menu a{padding:11px;text-align:center}.hero{min-height:auto;padding:80px 0}.hero h1 br{display:none}.thesis .container,.hgroup.split{align-items:flex-start;flex-direction:column}.section{padding-block:82px}.about-grid,.project-grid,.stack-grid,.early-card{grid-template-columns:1fr}.stack-grid article:nth-child(n){border-right:0;border-bottom:1px solid var(--line)}.stack-grid article:last-child{border-bottom:0}.tools-grid{grid-template-columns:1fr}.tools-grid article:nth-child(n){border-right:0;border-bottom:1px solid var(--line)}.tools-grid article:last-child{border-bottom:0}.timeline article{grid-template-columns:1fr;gap:18px}.cert-grid{grid-template-columns:1fr}.process-list{grid-template-columns:1fr}.process-list span:nth-child(odd){border-right:0}.mini-flow{align-items:stretch;flex-direction:column;text-align:center}.mini-flow i{transform:rotate(90deg)}.footer{padding:30px 0;align-items:flex-start;flex-direction:column;gap:25px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
 
+/* AI workflow: scoped blue / violet accents and a continuous vertical path. */
+.ai-workflow{--ai-blue:#465bc4;--ai-purple:#7060b5;background:#f8f9fc;border-bottom:1px solid var(--line)}
+.ai-workflow .hgroup>p{color:var(--ai-blue)}
+.ai-workflow .hgroup>span{max-width:700px}
+.ai-workflow-layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:start}
+.ai-steps{margin:0;padding:0;list-style:none}
+.ai-steps li{position:relative;display:grid;grid-template-columns:40px minmax(0,1fr);gap:20px;padding-bottom:24px}
+.ai-steps li:not(:last-child):before{content:"";position:absolute;top:40px;bottom:0;left:19px;width:2px;background:linear-gradient(#ccd4f1,#ddd7ef)}
+.ai-step-number{position:relative;display:grid;place-items:center;width:40px;height:40px;border:1px solid #ccd4f1;border-radius:10px;background:#eef1ff;color:var(--ai-blue);font:600 .75rem var(--mono)}
+.ai-steps li>div{padding:4px 0 20px;border-bottom:1px solid var(--line)}
+.ai-steps h3{margin:0;font-size:1rem;line-height:1.5;overflow-wrap:anywhere}
+.ai-steps p{margin:8px 0 0;color:var(--muted);font-size:.87rem}
+.ai-steps li:last-child{padding-bottom:0}
+.ai-steps li:last-child>div{border-bottom:0;padding-bottom:0}
+.ai-human-step .ai-step-number{color:var(--ai-purple);background:#f0ecfb;border-color:#d6cdef}
+.ai-responsibilities{display:grid;gap:16px}
+.ai-principle{padding:28px;border:1px solid #d8d9ed;border-radius:9px;background:linear-gradient(135deg,#eef2ff,#f3effb)}
+.ai-principle>span,.ai-role-label{margin:0;color:var(--ai-blue);font:600 .65rem/1.6 var(--mono);letter-spacing:.08em}
+.ai-principle h3{margin:16px 0 12px;font-size:1.45rem;line-height:1.5}
+.ai-principle p{margin:0;color:var(--muted);font-size:.87rem}
+.ai-role-card{padding:26px 28px;border:1px solid var(--line);border-radius:9px;background:#fff}
+.ai-role-card h3{margin:8px 0 16px;font-size:1.15rem}
+.ai-role-card ul{margin:0;padding-left:18px;color:var(--muted);font-size:.87rem}
+.ai-role-card li+li{margin-top:8px}
+.ai-role-card li::marker{color:var(--ai-blue)}
+.ai-owner-card{border-top:3px solid var(--ai-purple)}
+.ai-owner-card .ai-role-label,.ai-owner-card li::marker{color:var(--ai-purple)}
+@media(max-width:900px){.ai-workflow-layout{grid-template-columns:1fr}.ai-responsibilities{grid-template-columns:repeat(2,minmax(0,1fr))}.ai-principle{grid-column:1/-1}}
+@media(max-width:680px){.ai-responsibilities{grid-template-columns:1fr}.ai-steps li{gap:14px}.ai-principle,.ai-role-card{padding:24px}.ai-workflow h2{font-size:clamp(1.9rem,8vw,3rem)}}
+
 /* Pastel coral + lavender palette inspired by the supplied reference */
 :root{--bg:#eef1ff;--surface:rgba(255,255,255,.76);--raised:#fff7f5;--text:#252a43;--muted:#687089;--cyan:#ff7f8f;--purple:#7069bb;--line:rgba(77,84,132,.15)}
 body{background:linear-gradient(145deg,#f7f8ff 0%,#edf0ff 50%,#f5f1ff 100%);color:var(--text)}
