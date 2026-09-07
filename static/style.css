@@ -70,7 +70,6 @@ body{background:var(--bg)}body:before{display:none}
 .robot-project{grid-column:1/-1;border-top:3px solid var(--cyan);background:#fff;min-width:0}
 .robot-project .project-head{flex-wrap:wrap;gap:8px 20px;line-height:1.7}
 .robot-project h3{max-width:none;font-size:clamp(1.6rem,3vw,2.2rem)}
-.robot-project h3>span{display:inline-block;margin-left:12px;color:var(--muted);font-size:.65em;font-weight:500}
 .robot-project .robot-overview{max-width:900px}
 .robot-scope-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:28px;margin-top:24px}
 .robot-scope-grid>section{min-width:0;padding:22px;border:1px solid var(--line);border-radius:6px}
@@ -95,4 +94,8 @@ body{background:var(--bg)}body:before{display:none}
 .robot-system:before{content:'';position:absolute;bottom:100%;left:calc(50% - 1px);width:2px;height:32px;background:#7985aa}
 .robot-system:after{content:'';position:absolute;bottom:calc(100% + 3px);left:calc(50% - 5px);width:8px;height:8px;border-right:2px solid #7985aa;border-bottom:2px solid #7985aa;transform:rotate(45deg)}
 .robot-system strong{font:700 1rem var(--mono)}.robot-system>span{color:var(--muted);font-size:.78rem}
-@media(max-width:680px){.robot-scope-grid{grid-template-columns:1fr;gap:16px}.robot-scope-grid>section{padding:18px}.robot-workflows{--path-gap:16px;padding:16px 12px}.robot-project h3>span{display:block;margin:6px 0 0}.robot-path li{padding:8px 5px;font-size:.72rem}.robot-path ol{grid-template-rows:repeat(4,minmax(80px,auto))}.robot-project .robot-path h4{font-size:.73rem}.robot-system{padding:14px 12px}}
+@media(max-width:680px){.robot-scope-grid{grid-template-columns:1fr;gap:16px}.robot-scope-grid>section{padding:18px}.robot-workflows{--path-gap:16px;padding:16px 12px}.robot-path li{padding:8px 5px;font-size:.72rem}.robot-path ol{grid-template-rows:repeat(4,minmax(80px,auto))}.robot-project .robot-path h4{font-size:.73rem}.robot-system{padding:14px 12px}}
+
+/* Shared Chinese heading / English subtitle hierarchy for project titles. */
+h3.bilingual-title{font-weight:700;line-height:1.4;overflow-wrap:anywhere}
+.bilingual-title>.project-title-en{display:block;margin-top:6px;color:var(--muted);font-size:.68em;font-weight:400;line-height:1.5;overflow-wrap:anywhere}
